@@ -28,6 +28,8 @@ angular.module('whoisnext', ['ionic', 'whoisnext.controllers', 'whoisnext.servic
   // Set up the various states which the app can be in.
   // Each state's controller can be found in controllers.js
     
+  // init facebook login
+  openFB.init({appId: '1504208783191781'});  
     
   $stateProvider
     // setup an abstract state for the tabs directive
