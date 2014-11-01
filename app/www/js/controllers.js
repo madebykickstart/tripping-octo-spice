@@ -5,9 +5,10 @@ angular.module('whoisnext.controllers', [])
     $scope.groups = [];
     console.log(GroupsService);   
     // initial fetch
-    GroupsService.getGroups(true).then(function (groups) {
-        $scope.groups = groups;
-    });
+    //GroupsService.getGroups(true).then(function (groups) {
+        //$scope.groups = groups;
+    //});
+    $scope.groups = GroupsService.getGroups(true);
 })
 
 /*

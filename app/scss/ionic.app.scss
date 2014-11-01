@@ -21,3 +21,17 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 // Include all of Ionic
 @import "www/lib/ionic/scss/ionic";
 
+.scroll-content {
+    background-image: url("../img/bg_blur.png");
+    background-size: cover;
+} 
+
+.bar.bar-stable .title {
+    right: 0 !important;
+    left: 0 !important;
+    line-height: 32px !important;
+    img {
+        height: 32px; 
+        margin: 5px;   
+    }
+}

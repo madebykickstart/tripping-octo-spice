@@ -5,8 +5,9 @@ angular.module('whoisnext.services', [])
 
     this.getGroups = function(sync) {
         if (sync) {
-            var deferred = $q.defer();
-            $http.get(urlBase).
+            //var deferred = $q.defer();
+            return [{groupName: "Bier halen"}, {groupName: "Boodschappen halen"}];
+            /*$http.get(urlBase).
                 success(function(data, status, headers, config) {
                     console.log(data);
                     deferred.resolve(data);
@@ -14,7 +15,7 @@ angular.module('whoisnext.services', [])
                 error(function(data, status, headers, config) {
                     deferred.reject('error');
                 });
-            return deferred.promise;
+            return deferred.promise;*/
         } else {
             /*$http.get(urlBase).
                 success(function(data, status, headers, config) {
